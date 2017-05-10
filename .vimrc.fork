@@ -1,0 +1,27 @@
+set wrap
+set nospell
+set mouse=
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set encoding=utf8
+set tenc=utf8
+"let g:auto_save = 1
+let g:goyo_height = 100
+
+if !exists("g:npm_command")
+let g:npm_command = "/home/roger/.nvm/versions/node/v4.5.0/bin/npm"
+endif
+
+function! NpmStart()
+    silent !clear
+    execute "!" . g:npm_command . " start"
+endfunction
+
+nnoremap <leader>r :call NpmStart()<cr>
+
+set guifont=Ubuntu\ Mono\ 13
+set lazyredraw
+set isk=@,48-57,_,192-255
+set isk-=(
+set isk-=)
+set isk-=#
+set isk-=.
