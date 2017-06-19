@@ -27,8 +27,3 @@ if has("gui_running")
 endif
 
 set lazyredraw
-set isk=@,48-57,_,192-255
-set isk-=(
-set isk-=)
-set isk-=#
-set isk-=.
