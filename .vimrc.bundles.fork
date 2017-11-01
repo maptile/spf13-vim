@@ -1,5 +1,5 @@
 UnBundle 'gorodinskiy/vim-coloresque'
-Bundle 'vim-scripts/fcitx.vim'
+UnBundle 'vim-scripts/fcitx.vim'
 Bundle 'junegunn/goyo.vim'
 Bundle '907th/vim-auto-save'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
